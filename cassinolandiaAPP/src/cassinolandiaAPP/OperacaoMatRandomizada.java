@@ -1,22 +1,23 @@
 package cassinolandiaAPP;
 
-public class OperacaoMatRandomizada {
+import java.util.Random;
 
-	//private Double x;
-	//private Double y;
+public class OperacaoMatRandomizada {
 	
-	public static double somaRandomizada (double x, double y){
-		double numeroAleatorio1 = Math.random();
-		double numeroAleatorio2 = Math.random();
-		double calculoRandomizado = numeroAleatorio1 + numeroAleatorio2 * 1000/10;
-		//System.out.println(calculoRandomizado);
+	public static int somaRandomizada (){
+		Random numeroAleatorio1 = new Random();
+		int valorRandom1 = numeroAleatorio1.nextInt(50) +1;
+		Random numeroAleatorio2 = new Random();
+		int valorRandom2 = numeroAleatorio2.nextInt(50) +1;
+		int calculoRandomizado = valorRandom1 + valorRandom2;
 		return calculoRandomizado;
 	}
-	public static double multiplicacaoRandomizada (double x, double y){
-		double numeroAleatorio1 = Math.random();
-		double numeroAleatorio2 = Math.random();
-		double calculoRandomizado = numeroAleatorio1 * numeroAleatorio2 * 1000/10;
-		//System.out.println(multiplicacaoRandomizado);
+	public static int multiplicacaoRandomizada (){
+		Random numeroAleatorio1 = new Random();
+		int valorRandom1 = numeroAleatorio1.nextInt(10) +1;
+		Random numeroAleatorio2 = new Random();
+		int valorRandom2 = numeroAleatorio2.nextInt(10) +1;
+		int calculoRandomizado = valorRandom1 * valorRandom2;
 		return calculoRandomizado;
 	}
 }
