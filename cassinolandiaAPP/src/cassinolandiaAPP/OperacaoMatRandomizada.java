@@ -2,8 +2,8 @@ package cassinolandiaAPP;
 
 public class OperacaoMatRandomizada {
 
-	//private Double x;
-	//private Double y;
+	private Double x;
+	private Double y;
 	
 	public static double somaRandomizada (double x, double y){
 		double numeroAleatorio1 = Math.random();
