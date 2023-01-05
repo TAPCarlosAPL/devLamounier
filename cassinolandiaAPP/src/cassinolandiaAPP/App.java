@@ -9,7 +9,7 @@ public class App {
 		do{
 			
 			System.out.println("BEM-VINDO AO CASSINOLANDIA\nDigite um numero para escolher a modalidade de jogo");
-			System.out.println("1-SOMALANDIA\n2-SUBTRACAOLANDIA\n3-MULTIPLICALANDIA\n4-DIVISAOLANDIA\n5-NUMEROLANDIA\n6-REGRAS\n0-SAIR");
+			System.out.println("1-SOMALANDIA\n2-MULTIPLICALANDIA\n3-SUBTRACAOLANDIA\n4-DIVISAOLANDIA\n5-NUMEROLANDIA\n6-REGRAS\n0-SAIR");
 			int numOpcao = num.nextInt();
 			
 			
@@ -38,13 +38,37 @@ public class App {
 				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado2 + "\n");}
 				break;
 			case 3:
+				System.out.println("3-SUBTRALANDIA: ACERTE O RESULTADO DA SUBTRACAO! BOA SORTE!!");
+				int numDigitado3 = num.nextInt();
+				int resultado3 = OperacaoMatRandomizada.subtracaoRandomizada();
+				
+				//VALIDADOR DE RESULTADO
+				if(numDigitado3==resultado3) {
+					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD");
+				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado3 + "\n");}
 				break;
 			case 4:
+				System.out.println("4-DIVISAOLANDIA: ACERTE O RESULTADO DA DIVISAO! BOA SORTE!!");
+				int numDigitado4 = num.nextInt();
+				int resultado4 = OperacaoMatRandomizada.divisaoRandomizada();
+				
+				//VALIDADOR DE RESULTADO
+				if(numDigitado4==resultado4) {
+					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD");
+				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado4 + "\n");}
 				break;
 			case 5:
+				System.out.println("5-NUMEROLANDIA: ACERTE O NÚMERO ALEATÓRIO! NÚMEROS ENTRE 1 E 10. BOA SORTE!!");
+				int numDigitado5 = num.nextInt();
+				int resultado5 = OperacaoMatRandomizada.sorteadorNumRandomizada();
+				
+				//VALIDADOR DE RESULTADO
+				if(numDigitado5==resultado5) {
+					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD");
+				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado5 + "\n");}
 				break;
 			case 6:
-				System.out.println("REGRAS: EM TODAS AS MODALIDADES, OS NUMEROS SAO GERADOS DE 1 A 100. DIGITE APENAS NUMEROS ENTRE 1 E 100");
+				System.out.println("REGRAS: (NÃO ESQUECER) DEFINIR UMA DESCRIÇÃO DAS REGRAS DE CADA MODALIDADE DE JOGO");
 				break;
 			default: 
 				System.out.println("Opcao nao encontrada. Digite uma opcao valida.");
