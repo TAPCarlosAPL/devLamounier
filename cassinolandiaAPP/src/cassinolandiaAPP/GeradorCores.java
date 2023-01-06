@@ -2,9 +2,9 @@ package cassinolandiaAPP;
 
 import java.util.Random;
 
-public class ComparadorCores {
+public class GeradorCores {
 
-	public static int comparador() {
+	public static int gerador() {
 		Random numeroRandomCor = new Random();
 		int numeroCor = numeroRandomCor.nextInt(10) +1;
 		return numeroCor;

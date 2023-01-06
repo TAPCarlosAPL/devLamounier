@@ -70,7 +70,7 @@ public class App {
 			case 6:
 				System.out.println("6-JOGO DAS CORES: ESCOLHA UMA COR\n1-VERMELHO\n2-PRETO");
 				int numDigitado6 = num.nextInt();
-				int resultado6 = ComparadorCores.comparador();
+				int resultado6 = GeradorCores.gerador();
 				
 				//VALIDADOR DE RESULTADO COR VERMELHA
 				if(numDigitado6==1) {
