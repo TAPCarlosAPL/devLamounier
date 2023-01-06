@@ -9,7 +9,7 @@ public class App {
 		do{
 			
 			System.out.println("BEM-VINDO AO CASSINOLANDIA\nDigite um numero para escolher a modalidade de jogo");
-			System.out.println("1-SOMALANDIA\n2-MULTIPLICALANDIA\n3-SUBTRACAOLANDIA\n4-DIVISAOLANDIA\n5-NUMEROLANDIA\n6-REGRAS\n0-SAIR");
+			System.out.println("1-SOMALANDIA\n2-MULTIPLICALANDIA\n3-SUBTRACAOLANDIA\n4-DIVISAOLANDIA\n5-NUMEROLANDIA\n6-JOGO DAS CORES\n0-SAIR");
 			int numOpcao = num.nextInt();
 			
 			
@@ -68,7 +68,37 @@ public class App {
 				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado5 + "\n");}
 				break;
 			case 6:
-				System.out.println("REGRAS: (NÃO ESQUECER) DEFINIR UMA DESCRIÇÃO DAS REGRAS DE CADA MODALIDADE DE JOGO");
+				System.out.println("6-JOGO DAS CORES: ESCOLHA UMA COR\n1-VERMELHO\n2-PRETO");
+				int numDigitado6 = num.nextInt();
+				int resultado6 = ComparadorCores.comparador();
+				
+				//VALIDADOR DE RESULTADO COR VERMELHA
+				if(numDigitado6==1) {
+					System.out.println("PALPITE: VERMELHO");
+					int resultPalpite = resultado6;
+					if((resultPalpite %2)!=0) {
+						System.out.println("COR: VERMELHO\n");
+						System.out.println("PARABENS! VOCE ACERTOU\n\n");
+						//System.out.println("TESTE: " + resultPalpite);
+					}else if((resultPalpite %2)==0) {
+						System.out.println("COR: PRETO\n");
+						System.out.println("VOCE ERROU! TENTE OUTRA VEZ ;/\n\n");
+						//System.out.println("TESTE: " + resultPalpite);
+													}
+				//VALIDADOR DE RESULTADO COR PRETA	
+				}else if(numDigitado6==2) {
+					System.out.println("PALPITE: PRETO");
+					int resultPalpite2 = resultado6;
+					if((resultPalpite2 %2)==0) {
+						System.out.println("COR: PRETO\n");
+						System.out.println("PARABENS! VOCE ACERTOU\n\n");
+						//System.out.println("TESTE: " + resultPalpite2);
+					}else if((resultPalpite2 %2)!=0) {
+						System.out.println("COR: VERMELHO\n");
+						System.out.println("VOCE ERROU! TENTE OUTRA VEZ ;/\n\n");
+						//System.out.println("TESTE: " + resultPalpite2);
+													 }
+										   }
 				break;
 			default: 
 				System.out.println("Opcao nao encontrada. Digite uma opcao valida.");
