@@ -24,8 +24,9 @@ public class App {
 				
 				//VALIDADOR DE RESULTADO
 				if(numDigitado1==resultado1) {
-					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD");
-				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado1 + "\n");}
+					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD\n\n");
+					System.out.printf("RESULTADO: " + resultado1 + "\nPALPITE: " + numDigitado1 + "\n\n");
+				}else{System.out.printf("Puuuxa, nao foi dessa vez! TENTE OUTRA VEZ" + "\nRESULTADO: " + resultado1 + "\nPALPITE: " + numDigitado1 + "\n\n");}
 				break;
 			case 2:
 				System.out.println("2-MULTIPLICALANDIA: ACERTE O RESULTADO DA MULTIPLICACAO! BOA SORTE!!");
@@ -34,18 +35,20 @@ public class App {
 				
 				//VALIDADOR DE RESULTADO
 				if(numDigitado2==resultado2) {
-					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD");
-				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado2 + "\n");}
+					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD\n\n");
+					System.out.printf("RESULTADO: " + resultado2 + "\nPALPITE: " + numDigitado2 + "\n\n");
+				}else{System.out.printf("Puuuxa, nao foi dessa vez! TENTE OUTRA VEZ" + "\nRESULTADO: " + resultado2 + "\nPALPITE: " + numDigitado2 + "\n\n");}
 				break;
 			case 3:
-				System.out.println("3-SUBTRALANDIA: ACERTE O RESULTADO DA SUBTRACAO! BOA SORTE!!");
+				System.out.println("3-SUBTRALANDIA: ACERTE O RESULTADO DA SUBTRACAO! VALORES VARIAM ENTRE -50 E 50, BOA SORTE!!");
 				int numDigitado3 = num.nextInt();
 				int resultado3 = OperacaoMatRandomizada.subtracaoRandomizada();
 				
 				//VALIDADOR DE RESULTADO
 				if(numDigitado3==resultado3) {
-					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD");
-				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado3 + "\n");}
+					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD\n\n");
+					System.out.printf("RESULTADO: " + resultado3 + "\nPALPITE: " + numDigitado3 + "\n\n");
+				}else{System.out.printf("Puuuxa, nao foi dessa vez! TENTE OUTRA VEZ" + "\nRESULTADO: " + resultado3 + "\nPALPITE: " + numDigitado3 + "\n\n");}
 				break;
 			case 4:
 				System.out.println("4-DIVISAOLANDIA: ACERTE O RESULTADO DA DIVISAO! BOA SORTE!!");
@@ -54,18 +57,20 @@ public class App {
 				
 				//VALIDADOR DE RESULTADO
 				if(numDigitado4==resultado4) {
-					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD");
-				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado4 + "\n");}
+					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD\n\n");
+					System.out.printf("RESULTADO: " + resultado4 + "\nPALPITE: " + numDigitado4 + "\n\n");
+				}else{System.out.printf("Puuuxa, nao foi dessa vez! TENTE OUTRA VEZ" + "\nRESULTADO: " + resultado4 + "\nPALPITE: " + numDigitado4 + "\n\n");}
 				break;
 			case 5:
-				System.out.println("5-NUMEROLANDIA: ACERTE O NÚMERO ALEATÓRIO! NÚMEROS ENTRE 1 E 10. BOA SORTE!!");
+				System.out.println("5-NUMEROLANDIA: ACERTE O NUMERO ALEATORIO! ESCOLHA UM NUMERO ENTRE 1 E 10, BOA SORTE!!");
 				int numDigitado5 = num.nextInt();
 				int resultado5 = OperacaoMatRandomizada.sorteadorNumRandomizada();
 				
 				//VALIDADOR DE RESULTADO
 				if(numDigitado5==resultado5) {
 					System.out.println("PARABENS! VOCE ACERTOU O RESULTADO!!! QUEBROU A MATRIX xD");
-				}else{System.out.printf("Nao foi dessa vez! Tente novamente\n" + "RESULTADO: " + resultado5 + "\n");}
+					System.out.printf("RESULTADO: " + resultado5 + "\nPALPITE: " + numDigitado5 + "\n");
+				}else{System.out.printf("Puuuxa, nao foi dessa vez! TENTE OUTRA VEZ" + "\nRESULTADO: " + resultado5 + "\nPALPITE: " + numDigitado5 + "\n\n");}
 				break;
 			case 6:
 				System.out.println("6-JOGO DAS CORES: ESCOLHA UMA COR\n1-VERMELHO\n2-PRETO");
@@ -97,8 +102,8 @@ public class App {
 						System.out.println("COR: VERMELHO\n");
 						System.out.println("VOCE ERROU! TENTE OUTRA VEZ ;/\n\n");
 						//System.out.println("TESTE: " + resultPalpite2);
-													 }
-										   }
+							}
+						}
 				break;
 			default: 
 				System.out.println("Opcao nao encontrada. Digite uma opcao valida.");
