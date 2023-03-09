@@ -30,8 +30,7 @@ public class App {
 			
 			System.out.println("BEM-VINDO AO CASSINOLANDIA\nDigite um numero para escolher a modalidade de jogo");
 			System.out.println("1-SOMALANDIA\n2-MULTIPLICALANDIA\n3-SUBTRACAOLANDIA\n4-DIVISAOLANDIA\n5-NUMEROLANDIA\n6-JOGO DAS CORES\n0-SAIR");
-			int numOpcao = num.nextInt();
-			
+			int numOpcao = num.nextInt();		
 			
 			switch (numOpcao) {
 			case 1:
@@ -123,12 +122,12 @@ public class App {
 						}
 				break;
 			default: 
-				if(numOpcao==9) {
-					System.out.println("Você saiu do jogo\n");
+				if(numOpcao==0) {
+					System.out.println("Voce saiu do jogo =( \n");
 					opSair = true;
 					break;
 					
-				}else if(numOpcao!=9 || numOpcao!=1 || numOpcao!=2 || numOpcao!=3 || numOpcao!=4 || numOpcao!=5 || numOpcao!=6) {
+				}else if(numOpcao!=0 || numOpcao!=1 || numOpcao!=2 || numOpcao!=3 || numOpcao!=4 || numOpcao!=5 || numOpcao!=6) {
 					System.out.println("Opcao nao encontrada. Digite uma opcao valida.");
 					break;
 				}
