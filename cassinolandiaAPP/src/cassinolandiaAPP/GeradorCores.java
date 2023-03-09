@@ -10,11 +10,3 @@ public class GeradorCores {
 		return numeroCor;
 	}
 }
-		//if((numeroCor %2) !=0) {
-			//System.out.println("TESTE impar: " +numeroCor);
-			//int resultImpar = numeroCor;
-		//}else if((numeroCor %2) ==0) {
-			//System.out.println("TESTE par: " +numeroCor);
-			//int resultPar = numeroCor;
-		//}
-

@@ -55,5 +55,3 @@ public class OperacaoMatRandomizada {
 		return valorRandom1;
 	}
 }
-
-//numeros impares x numeros pares (luta dos times)

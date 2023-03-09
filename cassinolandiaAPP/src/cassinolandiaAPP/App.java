@@ -9,11 +9,11 @@ public class App {
 		Scanner num = new Scanner(System.in);
 		boolean opSair = false;
 		
-		
 		List<String> pessoas = new ArrayList<>();
 		pessoas.add("Carlos");
 		pessoas.add("Lucas");
 		pessoas.add("Marcos");
+		
 		System.out.println("Selecione um jogador digitando 0, 1 ou 2: ");
 		System.out.println(pessoas);
 		int escolhaJogador = num.nextInt();
@@ -26,8 +26,6 @@ public class App {
 			System.out.println("Você selecionou o jogador " + pessoas.get(2));
 		}
 		
-		
-	
 		do{
 			
 			System.out.println("BEM-VINDO AO CASSINOLANDIA\nDigite um numero para escolher a modalidade de jogo");
