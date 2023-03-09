@@ -1,10 +1,32 @@
 package cassinolandiaAPP;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
 	public static void main(String[] args) {
-		Scanner num = new Scanner(System.in);		
+		Scanner num = new Scanner(System.in);
+		boolean opSair = false;
+		
+		
+		List<String> pessoas = new ArrayList<>();
+		pessoas.add("Carlos");
+		pessoas.add("Lucas");
+		pessoas.add("Marcos");
+		System.out.println("Selecione um jogador digitando 0, 1 ou 2: ");
+		System.out.println(pessoas);
+		int escolhaJogador = num.nextInt();
+		
+		if(escolhaJogador==0) {
+			System.out.println("Você selecionou o jogador " + pessoas.get(0));
+		}else if(escolhaJogador==1) {
+			System.out.println("Você selecionou o jogador " + pessoas.get(1));
+		}else if(escolhaJogador==2) {
+			System.out.println("Você selecionou o jogador " + pessoas.get(2));
+		}
+		
+		
 	
 		do{
 			
@@ -103,9 +125,16 @@ public class App {
 						}
 				break;
 			default: 
-				System.out.println("Opcao nao encontrada. Digite uma opcao valida.");
-				break;
+				if(numOpcao==9) {
+					System.out.println("Você saiu do jogo\n");
+					opSair = true;
+					break;
+					
+				}else if(numOpcao!=9 || numOpcao!=1 || numOpcao!=2 || numOpcao!=3 || numOpcao!=4 || numOpcao!=5 || numOpcao!=6) {
+					System.out.println("Opcao nao encontrada. Digite uma opcao valida.");
+					break;
+				}
 			}
-		}while(1==1);
+		}while(opSair==false);
 	}
 }
